@@ -33,7 +33,7 @@ float pibperc2;
 // Entrada de dados da carta1 pelo usuário
 
     printf("Digite uma letra de A a H que representa o Estado da carta 1:");
-        scanf("%c", &estado1);
+        scanf(" %c", &estado1);
     printf("Digite um codigo com a letra do estado seguido de um numero de 01 a 04 que representa a carta 1:");
         scanf("%s", codigo1);
     printf("Digite o nome da cidade da carta 1:");
@@ -51,18 +51,18 @@ float pibperc2;
 // Entrada de dados da carta 2 pelo usuário
 
     printf("Digite uma letra de A a H que representa o Estado da carta 2:");
-        scanf("%c", &estado2);
-    printf("Digite um codigo com a letra do estado seguido de um numero de 01 a 04 que representa a carta 1:");
+        scanf(" %c", &estado2);
+    printf("Digite um codigo com a letra do estado seguido de um numero de 01 a 04 que representa a carta 2:");
         scanf("%s", codigo2);
-    printf("Digite o nome da cidade da carta 1:");
+    printf("Digite o nome da cidade da carta 2:");
         scanf("%s", cidade2);
-    printf("Digite a populacao da carta 1:");
+    printf("Digite a populacao da carta 2:");
         scanf("%d", &populacao2);
-    printf("Digite a area da carta 1:");
+    printf("Digite a area da carta 2:");
         scanf("%f", &area2);
-    printf("Digite o pib da carta 1:");
+    printf("Digite o pib da carta 2:");
         scanf("%f", &pib2);
-    printf("Digite quantos pontos turisticos tem na carta 1:");
+    printf("Digite quantos pontos turisticos tem na carta 2:");
         scanf("%d", &pontosturisticos2);
 // fim da entrada de dados da carta 2
 
@@ -75,8 +75,8 @@ float pibperc2;
     printf("Area: %f \n", area1);
     printf("PIB: %f \n", pib1);
     printf("Pontos turisticos: %d \n", pontosturisticos1);
-    printf("Densidade Populacional: %.2f.", densidadepop1 = populacao1 / area1);
-    printf("PIB Per capita: %.2f.", pibperc1 = pib1 / populacao1);
+    printf("Densidade Populacional: %.2f. \n", densidadepop1 = (float)populacao1 / area1);
+    printf("PIB Per capita: %.2f. \n", pibperc1 = pib1 / (float)populacao1);
 
 // Mostra ao usuário a Carta 2  
     printf("Carta 2 \n");
@@ -87,9 +87,9 @@ float pibperc2;
     printf("Area: %f \n", area2);
     printf("PIB: %f \n", pib2);
     printf("Pontos turisticos: %d \n", pontosturisticos2);
-    printf("Densidade Populacional: %.2f.", densidadepop2 = populacao2 / area2);
-    printf("PIB Per capita: %.2f.", pibperc2 = pib2 / populacao2);
+    printf("Densidade Populacional: %.2f. \n", densidadepop2 = (float)populacao2 / area2);
+    printf("PIB Per capita: %.2f. \n", pibperc2 = pib2 / (float)populacao2);
 
 
-  return 0;
+
 }
